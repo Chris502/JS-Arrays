@@ -109,6 +109,7 @@ var a = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
       return false
     }
   }
+  return true
 
    }
   finder(a)
@@ -304,17 +305,16 @@ array with those four objects. After that console.log the length of the Array an
 sure that it's equal to 4. */
 
   //Code Here
-  devMountainEmployees = devMountainEmployees.push(colt,tyler,ryan,cahlan)
+  devMountainEmployees.push(tyler, colt, cahlan, ryan)
   console.log(devMountainEmployees)
 
 /*Now let's say Cahlan has a mental breakdown and has to take a leave of absence to 'find himself'.
 Loop through your devMountainEmployees until you find cahlan, then remove him from the array.*/
 
   //Code Here
-devMountainEmployees = devMountainEmployees.filter(function(obj) {return obj.name != 'Cahlan'}
-
-
-
+console.log(devMountainEmployees[0])
+devMountainEmployees = devMountainEmployees.filter(function(x){return x.name != 'Cahlan'})
+console.log(devMountainEmployees)
 //NEXT PROBLEM
 
 
